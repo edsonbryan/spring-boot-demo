@@ -1,0 +1,18 @@
+ Name of the project. Used for tracking by tasks, as well as for specifying directory where CI artifact will be stored.
+name: 'spring-boot-demo'
+# Framework the project uses. Used to determine how to properly perform Unit testing and Sonarqube scanning.
+framework: 'Java'
+# Process name for the project. Used to specify the start command and location of the command in OCI image.
+process_type: 'demo'
+# Subpath for the source directory of the project.
+subpath: 'src'
+# Value to determine whether or not unit-testing is enabled. Values: True/False
+run_unit_tests: 'True'
+# Name of the docker registry in JFrog artifactory where artifacts are to be stored.
+artifactory_registry_url: 'oasis-dev-docker-virtual.jfrog-prod.debsreplatform.cloud'
+# Buildpack environment variables. Only used for UI Applications. 
+bp_node_run_scripts: ''
+bp_web_server: ''
+bp_web_server_root: ''
+# Build version. Temporary variable used for setting label on container when storing in artifactory.
+build_version: '1.0.0'
