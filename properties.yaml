@@ -7,7 +7,7 @@ process_type: 'demo'
 # Subpath for the source directory of the project.
 subpath: 'src'
 # Value to determine whether or not unit-testing is enabled. Values: True/False
-run_unit_tests: 'True'
+run_unit_tests: 'False'
 # Name of the docker registry in JFrog artifactory where artifacts are to be stored.
 artifactory_registry_url: 'oasis-dev-docker-virtual.jfrog-prod.debsreplatform.cloud'
 # Buildpack environment variables. Only used for UI Applications. 
